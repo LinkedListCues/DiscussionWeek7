@@ -37,33 +37,5 @@ namespace SortingTests
             var test = Sorting.MakeRandomUnsortedList();
             Assert.IsFalse(Sorting.Sorted(test));
         }
-
-        [TestMethod, Timeout(1000)]
-        public void BubbleSortTrivialTest() {
-            var test = Sorting.MakeRandomUnsortedList(1);
-            Sorting.BubbleSort(test);
-            Assert.IsTrue(Sorting.Sorted(test));
-        }
-
-        [TestMethod, Timeout(1000)]
-        public void BubbleSortTest() {
-            var test = Sorting.MakeRandomUnsortedList(1);
-            Sorting.BubbleSort(test);
-            Assert.IsTrue(Sorting.Sorted(test));
-        }
-
-        [TestMethod, Timeout(1000)]
-        public void SelectionSortTrivialTest() {
-            var test = Sorting.MakeRandomUnsortedList(1);
-            Sorting.SelectionSort(test);
-            Assert.IsTrue(Sorting.Sorted(test));
-        }
-
-        [TestMethod, Timeout(1000)]
-        public void SelectionSortTest() {
-            var test = Sorting.MakeRandomUnsortedList();
-            Sorting.SelectionSort(test);
-            Assert.IsTrue(Sorting.Sorted(test));
-        }
     }
 }

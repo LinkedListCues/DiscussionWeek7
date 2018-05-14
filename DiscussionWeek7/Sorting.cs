@@ -5,40 +5,11 @@ namespace DiscussionWeek7
     public static class Sorting
     {
         public static void BubbleSort(IComparable[] input) {
-            if (input.Length < 2) { return; }
-
-            bool swapped = true;
-            while (swapped) {
-                swapped = false;
-                for (int i = 0, c = input.Length; i < c; i++) {
-                    if (input[i - 1].CompareTo(input[i]) <= 0) { continue; }
-
-                    var temp = input[i];
-                    input[i] = input[i - 1];
-                    input[i - 1] = temp;
-                    swapped = true;
-                }
-            }
+            // TODO fill me in
         }
 
         public static void SelectionSort(IComparable[] input) {
-            if (input.Length < 2) { return; }
-
-            for (int i = 0, c = input.Length; i < c; i++) {
-                // find the minimum
-                int minIndex = i;
-                for (int j = i + 1; j < c; j++) {
-                    if (input[j].CompareTo(input[minIndex]) < 0) {
-                        minIndex = j;
-                    }
-                }
-                // swaparoo
-                if (minIndex != i) {
-                    var temp = input[i];
-                    input[i] = input[minIndex];
-                    input[minIndex] = temp;
-                }
-            }
+            // TODO fill me in
         }
 
         /// <summary>
